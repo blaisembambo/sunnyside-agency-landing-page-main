@@ -21,19 +21,25 @@
     --neutral-color-700: hsl(232, 10%, 55%);
     /* Grayish blue */
     --neutral-color-600: hsl(210, 4%, 67%);
+    /* sky blue */
+    --neutral-color-500: #3DBEFF;
     /* White */
-    --neutral-color-500: hsl(0, 0%, 100%);
+    --neutral-color-400: hsl(0, 0%, 100%);
 
 
     --headers-font-family: 'Fraunces', serif;
-    --body-font-family:'Barlow', sans-serif;
+    --body-font-family: 'Barlow', sans-serif;
 
-    --headers-font-weight-bold:700;
-    --headers-font-weight-bolder: 900;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;
 
-    --body-font-weight-regular: 600;
+    --font-weight-regular: 600;
 
-    --font-size-900 : 2.5625rem;
+    --headers-font-weight-bold: var(--font-weight-bold);
+    --headers-font-weight-bolder: var(--font-weight-bolder);
+    --body-font-weight-regular: var(--font-weight-regular);
+
+    --font-size-900: 2.5625rem;
     --font-size-800: 1.875rem;
     --font-size-750: 1.8125rem;
     --font-size-700: 1.5rem;
@@ -42,19 +48,147 @@
     --font-size-600: .9375rem;
     --font-size-550: .875rem;
     --font-size-500: .8125rem;
+    --font-size-400: .75rem;
     --font-size-350: .6875rem;
 
-    --fs-title-level-1:var(--font-size-900);
+    --fs-link-1: var(--font-size-650);
+    --fs-link-2: var(--font-size-500);
+    --fs-link-3: var(--font-size-550);
+    --fs-cta: var(--font-size-500);
+
+    --fs-title-level-1: var(--font-size-900);
     --fs-title-level-2: var(--font-size-750);
-    --fs-title-level-2: var(--font-size-680)
+    --fs-title-level-3: var(--font-size-680);
+    --fs-title-level-4: var(--font-size-600);
+    --fs-title-level-5: var(--font-size-550);
+
+    --fs-body-1 : var(--font-size-550);
+    --fs-body-2: var(--font-size-350);
+
 }
 
 @media (min-width: 50em) {
     :root {
-        --fs-title-level-1: var(--font-size-800)
-        --fs-title-level-2: var(--font-size-700)
+
+        --fs-link-1: var(--font-size-600);
+        --fs-link-2: var(--font-size-400);
+
+        --fs-title-level-1: var(--font-size-800);
+        --fs-title-level-2: var(--font-size-700);
+        --fs-title-level-4: var(--font-size-500);
+        --fs-title-level-5: var(--font-size-500);
+
+        --fs-body-1: var(--font-size-600);
     }
 }
+
+/*utility classes */
+
+.fs-title-level-1{
+    font-size: var(--fs-title-level-1);
+}
+
+.fs-title-level-2 {
+    font-size: var(--fs-title-level-2);
+}
+
+.fs-title-level-3 {
+    font-size: var(--fs-title-level-3);
+}
+
+.fs-title-level-4 {
+    font-size: var(--fs-title-level-4);
+}
+
+.fs-title-level-5 {
+    font-size: var(--fs-title-level-5);
+}
+.fs-link-1{
+    font-size: var(--fs-link-1);
+}
+.fs-link-2 {
+    font-size: var(--fs-link-2);
+}
+.fs-link-3 {
+    font-size: var(--fs-link-3);
+}
+.fs-cta{
+    font-size: var(--fs-cta);
+}
+.fs-body-1{
+    font-size: var(--fs-body-1);
+}
+.fs-body-2 {
+    font-size: var(--fs-body-2);
+}
+
+.header-level-1-color {
+    color: var(--neutral-color-400);
+}
+
+.header-level-2-color {
+    color: var(--neutral-color-900);
+}
+
+.header-level-3-color {
+    color: var(--primary-color-700);
+}
+
+.header-level-4-color {
+    color: var(--primary-color-600);
+}
+
+.header-level-5-color {
+    color: var(--neutral-color-600);
+}
+
+.header-level-6-color {
+    color: var(--neutral-color-900);
+}
+
+.background-color-1{
+    background-color: var(--neutral-color-500);
+}
+
+.background-color-2 {
+    background-color: var(--primary-color-500);
+}
+
+.body-color-1{
+    color: var(--neutral-color-800);
+}
+
+.body-color-2 {
+    color: var(--primary-color-700);
+}
+.body-color-3 {
+    color: var(--primary-color-600);
+}
+.body-color-4 {
+    color: var(--neutral-color-600);
+}
+
+.body-color-5 {
+    color: var(--neutral-color-600);
+}
+
+.headers-font-family{
+    font-family: var(--headers-font-family);
+}
+.body-font-family{
+    font-family: var(--body-font-family);
+}
+.headers-font-weight-bolder{
+    font-weight: var(--headers-font-weight-bolder);
+}
+.headers-font-weight-bold {
+    font-weight: var(--headers-font-weight-bold);
+}
+
+.body-font-weight-regular{
+    font-weight: var(--body-font-weight-regular);
+}
+
 
 /* https://piccalil.li/blog/a-modern-css-reset */
 
